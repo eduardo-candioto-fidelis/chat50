@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"
+    integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/static/reset.css">
+  <link rel="stylesheet" href="/static/style.css">
+
+  <title>{% block title %}{% endblock %}</title>
+
+</head>
+
+<body>
+  <main>
+    <h1 id="title-h1">{% block titleh1 %}{% endblock %}</h1>
+    <h2 id="title-h2">{% block titleh2 %}{% endblock %}</h2>
+
+    <p id="description">{% block description %}{% endblock %}</p>
+
+    <form id="form" action="{% block action1 %}{% endblock %}" method="POST">
+      <input class="form_itens" id="form_input" type="text" name="username" placeholder="User name" autofocus>
+      <button class="form_itens" id="form_submit" type="submit">{% block button1 %}{% endblock %}</button>
+    </form>
+
+    <p id="responce"></p>
+  </main>
+  <script src="{% block script %}{% endblock %}"></script>
+</body>
+
+</html>
