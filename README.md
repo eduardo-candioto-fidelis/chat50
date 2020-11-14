@@ -2,7 +2,7 @@
 
 # Chat50
 
-Um web chat  para dois usuários conversarem. Neste site dois usuários podem entrar com um *username* qualquer que não esteja sendo utilizado por outro usuário, e, utilizando ele como identificador, conversarem entre si por meio de um chat.
+Um site com um web chat  para dois usuários conversarem. Neste site dois usuários podem entrar com um *username* qualquer que não esteja sendo utilizado por outro usuário, e, utilizando ele como identificador, conversarem entre si por meio de um chat.
 
 
 
